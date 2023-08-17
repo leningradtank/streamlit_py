@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd 
 import datetime 
 from streamlit import session_state as state
-from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
-from langchain.utilities import WikipediaAPIWrapper
+# from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
+# from langchain.utilities import WikipediaAPIWrapper
 
 
 
