@@ -1,0 +1,72 @@
+,City,Country,Median Rent,Quality of Life Index,Purchasing Power Index,Safety Index,Health Care Index,Cost of Living Index,Property Price to Income Ratio,Traffic Commute Time Index,Pollution Index,Climate Index,Country Code
+0,Geneva,Switzerland,1967.55,moderately high,high,moderately high,moderately high,high,moderately high,moderate,low,moderately high,ch
+1,Zurich,Switzerland,1932.41,moderately high,high,high,moderately high,high,moderately high,moderately high,low,moderately high,ch
+2,London,United Kingdom,1878.27,moderate,moderately high,low,moderately high,moderately high,moderately high,high,moderately high,moderately high,gb
+3,Dublin,Ireland,1824.32,moderate,moderately high,low,low,moderately high,moderate,moderately high,moderate,moderately high,ie
+4,Amsterdam,Netherlands,1515.57,high,high,moderately high,high,moderately high,moderate,low,low,moderately high,nl
+5,Reykjavik,Iceland,1496.39,high,moderately high,high,moderate,moderately high,low,low,low,moderate,is
+6,Luxembourg,Luxembourg,1441.04,high,high,moderately high,high,moderately high,moderate,moderate,low,moderately high,lu
+7,Copenhagen,Denmark,1336.35,high,moderately high,high,high,moderately high,moderate,moderate,low,moderately high,dk
+8,Cork,Ireland,1315.62,moderately high,moderately high,moderate,moderate,moderately high,low,moderately high,low,moderately high,ie
+9,Munich,Germany,1203.7,high,high,high,high,moderately high,moderately high,moderately high,low,moderate,de
+10,Oslo,Norway,1163.85,moderately high,high,moderately high,high,moderately high,moderate,moderate,low,moderate,no
+11,Rotterdam,Netherlands,1095.98,high,high,moderately high,high,moderately high,low,low,low,moderately high,nl
+12,Paris,France,1035.5,moderate,moderately high,low,high,moderately high,high,high,high,moderately high,fr
+13,Edinburgh,United Kingdom,1005.51,moderately high,moderately high,moderately high,high,moderately high,moderate,moderate,low,moderately high,gb
+14,Milan,Italy,988.11,low,moderate,low,moderately high,moderately high,high,moderately high,high,moderately high,it
+15,The Hague (Den Haag),Netherlands,984.08,high,high,high,high,moderately high,low,low,low,high,nl
+16,Stockholm,Sweden,984.04,moderately high,moderately high,moderate,moderate,moderately high,moderately high,moderately high,low,moderate,se
+17,Berlin,Germany,978.3,moderately high,moderately high,moderate,moderate,moderately high,moderate,moderately high,moderate,moderately high,de
+18,Barcelona,Spain,961.1,moderate,moderately high,low,high,moderately high,moderate,moderate,high,high,es
+19,Brussels,Belgium,937.68,moderate,high,low,moderately high,moderately high,low,moderately high,moderately high,moderately high,be
+20,Frankfurt,Germany,926.56,moderately high,high,moderate,high,moderately high,moderate,moderate,moderate,moderately high,de
+21,Manchester,United Kingdom,915.54,moderately high,moderately high,low,high,moderately high,low,moderately high,moderately high,moderately high,gb
+22,Lisbon,Portugal,911.18,moderately high,low,moderately high,moderately high,moderate,high,moderately high,moderate,high,pt
+23,Prague,Czech Republic,887.24,moderately high,moderately high,high,high,moderately high,high,moderately high,moderate,moderate,
+24,Stuttgart,Germany,875.85,moderately high,high,moderately high,moderately high,moderately high,moderate,moderately high,moderate,moderate,de
+25,Birmingham,United Kingdom,870.01,moderately high,high,low,moderately high,moderately high,moderate,moderately high,moderately high,moderately high,gb
+26,Glasgow,United Kingdom,853.47,moderately high,high,moderate,high,moderately high,low,moderately high,moderate,moderately high,gb
+27,Hamburg,Germany,839.67,moderately high,high,moderate,high,moderately high,moderate,moderately high,moderate,moderately high,de
+28,Helsinki,Finland,836.38,high,high,high,high,moderately high,moderate,moderate,low,moderate,fi
+29,Madrid,Spain,834.69,high,high,high,high,moderate,low,moderate,moderate,moderately high,es
+30,Rome,Italy,779.05,moderate,moderate,low,moderate,moderately high,moderately high,moderately high,moderately high,high,it
+31,Gothenburg,Sweden,763.96,moderately high,high,moderate,moderately high,moderately high,moderate,moderate,low,moderate,se
+32,Porto,Portugal,752.35,moderately high,moderate,moderately high,high,moderate,moderate,low,low,high,pt
+33,Vienna,Austria,727.91,high,high,high,high,moderately high,moderate,low,low,moderately high,at
+34,Warsaw,Poland,723.91,moderate,moderate,high,moderate,moderate,moderately high,moderately high,moderately high,moderate,pl
+35,Valencia,Spain,684.69,high,high,moderately high,high,moderate,low,low,moderate,high,es
+36,Krakow (Cracow),Poland,637.6,moderate,moderately high,high,moderate,moderate,moderate,moderate,high,moderate,pl
+37,Ljubljana,Slovenia,636.64,moderately high,moderate,high,moderate,moderate,moderately high,moderate,low,moderate,si
+38,Brno,Czech Republic,619.84,moderately high,moderately high,high,high,moderate,moderately high,moderate,moderate,moderate,
+39,Wroclaw,Poland,606.13,moderate,moderate,high,moderate,moderate,moderate,moderately high,moderately high,moderate,pl
+40,Gdansk,Poland,604.52,moderate,moderately high,moderately high,low,moderate,moderately high,moderate,moderately high,moderate,pl
+41,Bratislava,Slovakia,559.97,moderate,moderate,moderately high,low,moderate,moderately high,moderate,moderate,moderate,sk
+42,Belgrade,Serbia,554.09,low,low,moderate,low,moderate,high,moderately high,high,moderately high,rs
+43,Vilnius,Lithuania,540.65,moderately high,moderate,high,high,moderate,moderately high,moderate,low,moderate,lt
+44,Zagreb,Croatia,539.98,moderately high,moderate,high,moderate,moderate,moderately high,moderately high,moderate,moderately high,hr
+45,Poznan,Poland,525.7,moderate,moderate,moderately high,low,moderate,moderate,moderately high,moderately high,moderate,pl
+46,Tallinn,Estonia,522.35,moderately high,moderately high,high,high,moderately high,moderate,moderate,low,moderate,ee
+47,Athens,Greece,509.84,moderate,low,low,low,moderately high,moderately high,moderately high,moderately high,high,gr
+48,Turin,Italy,507.7,moderate,moderate,low,moderate,moderately high,moderate,moderate,high,moderately high,it
+49,Budapest,Hungary,470.25,moderate,moderate,moderately high,low,moderate,moderately high,moderately high,moderately high,moderate,hu
+50,Moscow,Russia,417.95,low,moderate,moderate,moderate,low,high,high,moderately high,moderate,
+51,Thessaloniki,Greece,413.74,low,low,low,low,moderate,moderately high,moderate,high,moderately high,gr
+52,Sofia,Bulgaria,383.06,moderate,moderate,moderate,low,moderate,moderate,moderate,high,moderate,bg
+53,Novi Sad,Serbia,378.42,moderate,low,moderate,low,low,high,low,moderately high,moderately high,rs
+54,Cluj-Napoca,Romania,372.66,moderately high,moderate,high,moderate,low,moderately high,moderate,moderately high,moderate,ro
+55,Bucharest,Romania,362.51,moderate,moderate,moderately high,low,moderate,moderate,high,high,moderate,ro
+56,Riga,Latvia,317.16,moderate,moderate,moderate,moderate,moderately high,moderate,moderate,moderate,moderate,lv
+57,Lviv,Ukraine,316.96,moderate,low,moderate,moderate,low,moderately high,moderately high,moderately high,moderate,ua
+58,Timisoara,Romania,306.29,moderately high,moderate,high,moderately high,low,moderate,low,moderately high,moderately high,ro
+59,Varna,Bulgaria,295.79,moderate,moderate,moderate,moderate,low,moderate,moderate,moderately high,moderately high,bg
+60,Kiev (Kyiv),Ukraine,275.15,low,low,moderate,low,low,moderately high,high,high,moderate,ua
+61,Minsk,Belarus,262.63,moderate,low,low,low,low,moderately high,moderate,moderate,moderate,by
+62,Saint Petersburg,Russia,260.43,low,moderate,moderate,moderate,low,high,high,moderately high,moderate,
+63,Dnipro,Ukraine,234.88,low,low,low,low,low,moderately high,moderately high,high,moderate,ua
+64,Kharkiv,Ukraine,228.55,low,low,moderate,low,low,moderately high,moderately high,moderately high,moderate,ua
+65,Skopje,North Macedonia,225.83,low,low,moderate,low,low,moderately high,moderate,high,moderate,mk
+66,Sarajevo,Bosnia And Herzegovina,213.4,moderate,moderate,moderate,moderate,low,moderately high,moderate,high,moderate,ba
+67,Novosibirsk,Russia,195.72,low,low,moderate,low,low,moderately high,moderately high,high,low,
+68,Yekaterinburg,Russia,190.43,low,moderate,moderate,low,low,moderate,moderately high,high,low,
+69,Nizhny Novgorod,Russia,185.83,moderate,low,moderately high,high,low,moderately high,moderate,moderate,low,
+70,Odessa (Odesa),Ukraine,159.26,low,low,low,low,low,moderately high,moderately high,moderately high,moderate,ua
