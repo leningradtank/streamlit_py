@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd 
 import datetime 
 from streamlit import session_state as state
-# from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
-# from langchain.utilities import WikipediaAPIWrapper
-
+from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
+from langchain.utilities import WikipediaAPIWrapper
+import wikipedia
 
 
 df = pd.read_csv('statsdf.csv')
@@ -125,6 +125,58 @@ st.markdown("<br>", unsafe_allow_html=True)
 
 st.markdown("<h4 style='text-align: center;'>✈️ Let's plan an itinerary for your nomad travels  </h4>", unsafe_allow_html=True)
 
+st.markdown(
+    '''
+    <style>
+        .center-image {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <a href="https://pythonpythonme.netlify.app/index.html">
+    </a>
+    <p></p>
+    <p></p>
+    <body>
+        <header>
+            <div>
+                <div class="center-image">
+                <h1>🌎 🗺️</h1>
+                </div>
+            </div>
+        </header>
+    </body>
+    ''',
+    unsafe_allow_html=True
+)
 
+# Load the question answering model and tokenizer
+model_name = "deepset/roberta-base-squad2"
+model = AutoModelForQuestionAnswering.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name)
 
+# Create a pipeline for question answering
+nlp = pipeline('question-answering', model=model, tokenizer=tokenizer)
 
+# User input
+question_input = st.text_input("Enter the region you want to travel to:")
+
+if question_input:
+    # Extract keywords from the question input
+    keywords = question_input.split()
+
+    # Fetch context information using the Wikipedia toolkit based on keywords
+    wikipedia = WikipediaAPIWrapper()
+    context_input = wikipedia.run(' '.join(keywords))
+
+    # Prepare the question and context for question answering
+    QA_input = {
+        'question': question_input,
+        'context': context_input
+    }
+
+    # Get the answer using the question answering pipeline
+    res = nlp(QA_input)
+
+    # Display the answer
+    st.text_area("Answer:", res['answer'])
