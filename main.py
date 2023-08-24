@@ -5,6 +5,9 @@ from streamlit import session_state as state
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
 from langchain.utilities import WikipediaAPIWrapper
 import wikipedia
+import os 
+
+OPENAI_API_KEY = os.environ["OPENAI_API_KEY"] 
 
 
 df = pd.read_csv('statsdf.csv')
@@ -133,8 +136,6 @@ st.markdown(
             justify-content: center;
         }
     </style>
-    <a href="https://pythonpythonme.netlify.app/index.html">
-    </a>
     <p></p>
     <p></p>
     <body>
@@ -149,34 +150,40 @@ st.markdown(
     ''',
     unsafe_allow_html=True
 )
+from langchain.llms import OpenAI 
 
-# Load the question answering model and tokenizer
-model_name = "deepset/roberta-base-squad2"
-model = AutoModelForQuestionAnswering.from_pretrained(model_name)
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+llm = OpenAI(temperature = 0.9)
+from langchain.prompts import PromptTemplate 
 
-# Create a pipeline for question answering
-nlp = pipeline('question-answering', model=model, tokenizer=tokenizer)
+# User Inputs in Columns
+col1, col2 = st.columns([2, 2])
 
-# User input
-question_input = st.text_input("Enter the region you want to travel to:")
+def get_cities_by_selected_countries(selected_countries):
+    selected_cities = df[df['Country'].isin(selected_countries)]['City'].unique()
+    default_option = None
+    selected_cities = [default_option] + selected_cities
+    return selected_cities
 
-if question_input:
-    # Extract keywords from the question input
-    keywords = question_input.split()
+with col1:
+    default_option = None
+    city_options = [default_option] + df['City'].unique().tolist()
+    city = st.selectbox('Select the city you want to spend time in 🗺️', city_options)
+   
+with col2:
+    timespan = st.number_input('How many days would you like to spend here ?', min_value=1, max_value=60, value=10)
 
-    # Fetch context information using the Wikipedia toolkit based on keywords
-    wikipedia = WikipediaAPIWrapper()
-    context_input = wikipedia.run(' '.join(keywords))
+print(city)
 
-    # Prepare the question and context for question answering
-    QA_input = {
-        'question': question_input,
-        'context': context_input
-    }
+prompt = PromptTemplate(input_variables = ["city", 'timespan'], 
+                        template = """I want to spend {timespan} days in {city} as a digital nomad. I will be working remotely 
+                        for my current company, hence I need recommendations for: 1 monthly coworking space, 3 cafes and
+                        2-3 potential tourist attractions I can visit or activities I can do.""")
 
-    # Get the answer using the question answering pipeline
-    res = nlp(QA_input)
+# llm(prompt.format(city = city, timespan = timespan))
 
-    # Display the answer
-    st.text_area("Answer:", res['answer'])
+if st.button('Generate Itineary 🚀'):
+    st.markdown("<br>", unsafe_allow_html=True)
+    result = llm(prompt.format(city = city, timespan = timespan))
+
+    st.text_area("Here's what we recommend:", result, height = 10)
+        # st.markdown(f"Selected Timeframe: {selected_timeframe.strftime('%Y-%m-%d')} 🗓️")
